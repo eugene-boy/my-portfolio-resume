@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <meta name="description" content="Personal portfolio of Eugene">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#hero" class="logo">
+        <img src="images/icon.png" alt="Jordan Lee" class="logo__avatar">
+        <span>Eugene</span>
+      </a>
+
+      <div class="navbar__right">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">
+            <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="hero" class="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Hi, I'm</p>
+          <h1 class="hero__name">Eugene <span class="accent">Boy</span></h1>
+          <p class="hero__role">a <span class="hero__role-text" id="typedText"></span><span class="hero__cursor" aria-hidden="true"></span></p>
+          <p class="hero__tagline">IT Professional | Web Developer | IT Team Leader — Turning technical challenges into smart, reliable, and user-focused solutions.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View my work</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <span class="hero__blob" aria-hidden="true"></span>
+          <img src="images/eugene.png" alt="Portrait of Jordan Lee" class="hero__photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About</h2>
+      <div class="about__content">
+        <p>
+          I’m a versatile IT professional with hands-on experience in IT Support, Web Development, 
+          and UI/UX Design. With intermediate coding skills and a strong foundation in technical 
+          troubleshooting, I help turn technical challenges into practical, reliable solutions.
+        </p>
+        <p>
+          My dedication and performance in IT support led me to take on the role of IT Team Leader,
+          where I combine technical expertise with leadership, problem-solving, and project management.
+          I’m passionate about building efficient systems, improving digital experiences, and delivering
+          solutions that help businesses work smarter.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <img src="images/ix-website.png" alt="Screenshot of Project One" loading="lazy">
+          <div class="project-card__body">
+            <h3>IntelliworxPH Website Management</h3>
+            <p>Managing, maintaining, and updating the IntelliworxPH website.</p>
+            <div class="project-card__links">
+              <a href="https://youtu.be/ED0D5mfg0ew?si=hr8GAFEMnP0Y7mJS" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/asset-management.png" alt="Screenshot of Project Two" loading="lazy">
+          <div class="project-card__body">
+            <h3>IT Asset Management</h3>
+            <p>Managing, tracking, maintaining, and optimizing company IT equipment and resources.</p>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/networkmanagement.png" alt="Screenshot of Project Three" loading="lazy">
+          <div class="project-card__body">
+            <h3>Company Network Management</h3>
+            <p>Managing, monitoring, and maintaining the company’s network infrastructure for reliable connectivity and operations.</p>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+      <h2 class="section-title">Certificates</h2>
+      <div class="certificates__grid">
+
+        <article class="certificate-card">
+          <img src="images/Technical Support Fundamentals.png" alt="Techsupport" loading="lazy">
+          <div class="certificate-card__body">
+            <h3>Tech Support Fundamentals</h3>
+            <p class="certificate-card__meta">Google &middot; July 2024</p>
+            <div class="certificate-card__links">
+              <a href="images/Technical Support Fundamental_Cert.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img src="images/Foundation of User Experience Design.png" alt="Certificate title" loading="lazy">
+          <div class="certificate-card__body">
+            <h3>Foundation of User Experience (UX) Design</h3>
+            <p class="certificate-card__meta">Google &middot; May 2024</p>
+            <div class="certificate-card__links">
+              <a href="images/UX.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="certificate-card">
+          <img src="images/Create a Mockup in Figma.png" alt="Certificate title" loading="lazy">
+          <div class="certificate-card__body">
+            <h3>Create a Mockup in Figma</h3>
+            <p class="certificate-card__meta">Coursera &middot; May 2024</p>
+            <div class="certificate-card__links">
+              <a href="images/FigmaCertificate.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills__list">
+        <li>IT Support & Troubleshooting</li>
+        <li>Team Management</li>
+        <li>System Administration</li>
+        <li>HTML, CSS, and Java Script</li>
+        <li>WordPress</li>
+        <li>Git &amp; GitHub</li>
+        <li>Responsive Design</li>
+        <li>Elementor</li>
+        <li>Wix</li>
+        <li>IT Asset Management</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact__intro">Have a project in mind or just want to say hi? Send me a message.</p>
+
+      <form id="contactForm" class="contact-form" action="https://formsubmit.co/eugeneboypradosanchez@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New message from your portfolio site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Send Message</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Eugene Boy. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/eugene-boy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/eugene-boy-sanchez-a432522a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://www.facebook.com/eugeneboy.sanchez.7" target="_blank" rel="noopener noreferrer">FaceBook</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
